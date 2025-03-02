@@ -1,0 +1,31 @@
+.calculator_btn {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    background-color: rgb(141, 212, 224);
+}
+
+.calculator_btn:hover {
+    background-color: rgb(83, 176, 204);
+    cursor: pointer;
+}
+
+.calculator_row {
+    margin-bottom: 4px;
+}
+
+.calculator_output {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 308PX;
+    height: 100px;
+    font-size: 30px;
+    background-color: rgb(182, 238, 245);
+    margin-right: 4px;
+}
+
+.calculator_first_row {
+    display: flex;
+    margin-bottom: 4px;
+}
