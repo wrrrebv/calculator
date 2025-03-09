@@ -29,3 +29,9 @@
     display: flex;
     margin-bottom: 4px;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -7,24 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        let digit = "0";
-
-        function save_digit(pressed_digit) {
-            digit += pressed_digit;
-        }
-    </script>
+    <script src="calc.js"></script>
     <div class="calculator">
         <div class="calculator_first_row">
             <div class="calculator_output">
                 0
                 
             </div>
-            <button class="calculator_btn">x</button>
+            <button class="calculator_btn" onclick="delete_last_digit()">x</button>
         </div>
         <div class="calculator_row">
-            <button class="calculator_btn">+</button>
-            <button class="calculator_btn">-</button>
+            <button class="calculator_btn" onclick="plus()">+</button>
+            <button class="calculator_btn" onclick="minus()">-</button>
             <button class="calculator_btn">*</button>
             <button class="calculator_btn">/</button>
         </div>
@@ -32,13 +26,13 @@
             <button class="calculator_btn" onclick="save_digit(1)">1</button>
             <button class="calculator_btn" onclick="save_digit(2)">2</button>
             <button class="calculator_btn" onclick="save_digit(3)">3</button>
-            <button class="calculator_btn">C</button>
+            <button class="calculator_btn" onclick="clear_output()">C</button>
         </div>
         <div class="calculator_row">
             <button class="calculator_btn" onclick="save_digit(4)">4</button>
             <button class="calculator_btn" onclick="save_digit(5)">5</button>
             <button class="calculator_btn" onclick="save_digit(6)">6</button>
-            <button class="calculator_btn">=</button>
+            <button class="calculator_btn" onclick="equal()">=</button>
         </div>
         <div class="calculator_row">
             <button class="calculator_btn" onclick="save_digit(7)">7</button>
